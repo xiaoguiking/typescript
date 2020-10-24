@@ -1,5 +1,5 @@
 /**
- * 接口inferface
+ * 接口interface
  */
 
  interface Boy  {
