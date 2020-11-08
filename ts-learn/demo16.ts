@@ -12,24 +12,23 @@ console.log(join("html", 2));
 function join1<T>(fir: T, sec: T) {
   return `${fir}${sec}`;
 }
-
 console.log(join1<string>("html", "泛型"));
 
 // 泛型中数组使用
-function myFun<ANY>(params: ANY[]){
-    return params
+function myFun<ANY>(params: ANY[]) {
+  return params;
 }
 
 myFun<string>(["泛型", "数组"]);
 
-function myFun1<ANY>(params: Array<ANY>){
-    return params
+function myFun1<ANY>(params: Array<ANY>) {
+  return params;
 }
 
 myFun<string>(["泛型", "数组"]);
 
 // 多个泛型定义
 function foo<T, P>(fir: T, sec: P) {
-    return `${fir}${sec}`;
+  return `${fir}${sec}`;
 }
 foo<string, number>("泛型1", 123);
